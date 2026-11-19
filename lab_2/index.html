@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Калькулятор БЖУ</title>
+  </head>
+  <body>
+    <p>Укажите свои параметры:</p>
+    <div class="fields">
+      <div class="field">
+        <label for="age">Возраст:</label>
+        <input id="age" type="number" />
+      </div>
+      <div class="field">
+        <label for="height">Рост:</label>
+        <input id="height" type="number" />
+      </div>
+      <div class="field">
+        <label for="weight">Вес:</label>
+        <input id="weight" type="number" />
+      </div>
+      <div class="field">
+        <label for="gender">Пол:</label>
+        <select id="gender">
+          <option value="male">Мужской</option>
+          <option value="female">Женский</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="activity">Физическая активность:</label>
+        <select id="activity">
+          <option value="low">Низкая</option>
+          <option value="moderate">Умеренная</option>
+          <option value="high">Высокая</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="goal">Цель:</label>
+        <select id="goal">
+          <option value="lose">Снижение веса</option>
+          <option value="maintain">Поддержание веса</option>
+          <option value="gain">Набор веса</option>
+        </select>
+      </div>
+    </div>
+    <button id="calculate">Посчитать</button>
+    <p id="errorMessage" style="color: red"></p>
+    <p>Калории: <span id="caloriesResult"></span></p>
+    <p>Белки: <span id="proteinsResult"></span></p>
+    <p>Жиры: <span id="fatsResult"></span></p>
+    <p>Углеводы: <span id="carbohydratesResult"></span></p>
+    <script src="./index.js"></script>
+  </body>
+</html>
