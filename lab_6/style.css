@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  padding: 40px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.field {
+  position: relative;
+  width: 500px;
+  height: 220px;
+  margin: 30px auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.ball-green {
+  top: 25px;
+  background: green;
+}
+
+.ball-blue {
+  top: 95px;
+  background: blue;
+}
+
+.ball-red {
+  top: 165px;
+  background: red;
+}
+
+p {
+  color: #555;
+}
